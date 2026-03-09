@@ -14,7 +14,7 @@
 	}
 
 	function fetchIdentityToken() {
-		const porticoURL = "https://portico.sfproxy.controltelemetry-s.aws-esvc1-useast2.aws.sfdc.cl/api/v1/miaw/getJwtToken?issuer=testIssuer&subject=testSubject@cwc.com&jwtExpInSeconds=600&keyId=43447ac7-78f5-40c5-88c1-c15c150cd2ff";
+		const porticoURL = "https://portico.sfproxy.controltelemetry.aws-dev2-uswest2.aws.sfdc.cl/api/v1/miaw/getJwtToken?issuer=testIssuer&subject=testSubject@cwc.com&jwtExpInSeconds=600&keyId=43447ac7-78f5-40c5-88c1-c15c150cd2ff";
 		return fetch(porticoURL).then(function(response) {
 			return response.json();
 		});
