@@ -53,23 +53,30 @@
     ECV2-Voice-SDB40-ECv2VoiceAgent_5
 </footer>
 
-<script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+<script type="text/javascript">
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'en_US';
 
-			embeddedservice_bootstrap.init(
-				'00DoB000001lT7d',
-				'ECV2VoiceBlitz5_Channel',
-				'https://orgfarm-2f7de4f9d8.test2.my.pc-rnd.site.com/ESWECV2VoiceBlitz5Channe1776930027291',
-				{
-					scrt2URL: 'https://orgfarm-2f7de4f9d8.test2.my.pc-rnd.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
+            embeddedservice_bootstrap.init(
+                '00DoB000001lT7d',
+                'ECV2VoiceBlitz5_Channel',
+                'https://orgfarm-2f7de4f9d8.test2.my.pc-rnd.site.com/ESWECV2VoiceBlitz5Channe1776930027291',
+                {
+                    scrt2URL: 'https://orgfarm-2f7de4f9d8.test2.my.pc-rnd.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    }
 </script>
-<script type='text/javascript' 
-    src='
+
+<!-- Salesforce Embedded Messaging Bootstrap -->
+<script 
+    src="https://orgfarm-2f7de4f9d8.test2.my.pc-rnd.site.com/ESWECV2VoiceBlitz5Channe1776930027291/assets/js/bootstrap.min.js"
+    onload="initEmbeddedMessaging()">
+</script>
+
+</body>
+</html>
